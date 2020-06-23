@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MordyGolf.Api", "MordyGolf.Api\MordyGolf.Api.csproj", "{085B80A4-E6A9-4FDB-A2E1-C9F114B6814C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MordyGolf.Service", "MordyGolf.Service\MordyGolf.Service.csproj", "{AFCF1CDF-CC6A-4EBA-8FCF-871622A7E93B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MordyGolf.Data", "MordyGolf.Data\MordyGolf.Data.csproj", "{CE3C7749-27E7-4ABD-AE9B-07FDD22C922D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MordyGolf.DataContracts", "MordyGolf.DataContracts\MordyGolf.DataContracts.csproj", "{1A9D3C3E-ED25-4E1A-BB37-FCDEBC8B8CA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MordyGolf.ServiceContracts", "MordyGolf.ServiceContracts\MordyGolf.ServiceContracts.csproj", "{65811B84-AB9B-440D-A0C8-07EAA2722387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MordyGolf.Api.UnitTests", "MordyGolf.Api.UnitTests\MordyGolf.Api.UnitTests.csproj", "{A2E8DCD4-3186-4C4E-8AF9-C67C7D60B00B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{085B80A4-E6A9-4FDB-A2E1-C9F114B6814C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085B80A4-E6A9-4FDB-A2E1-C9F114B6814C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085B80A4-E6A9-4FDB-A2E1-C9F114B6814C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085B80A4-E6A9-4FDB-A2E1-C9F114B6814C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCF1CDF-CC6A-4EBA-8FCF-871622A7E93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCF1CDF-CC6A-4EBA-8FCF-871622A7E93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCF1CDF-CC6A-4EBA-8FCF-871622A7E93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCF1CDF-CC6A-4EBA-8FCF-871622A7E93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3C7749-27E7-4ABD-AE9B-07FDD22C922D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3C7749-27E7-4ABD-AE9B-07FDD22C922D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3C7749-27E7-4ABD-AE9B-07FDD22C922D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3C7749-27E7-4ABD-AE9B-07FDD22C922D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9D3C3E-ED25-4E1A-BB37-FCDEBC8B8CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9D3C3E-ED25-4E1A-BB37-FCDEBC8B8CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9D3C3E-ED25-4E1A-BB37-FCDEBC8B8CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9D3C3E-ED25-4E1A-BB37-FCDEBC8B8CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65811B84-AB9B-440D-A0C8-07EAA2722387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65811B84-AB9B-440D-A0C8-07EAA2722387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65811B84-AB9B-440D-A0C8-07EAA2722387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65811B84-AB9B-440D-A0C8-07EAA2722387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E8DCD4-3186-4C4E-8AF9-C67C7D60B00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E8DCD4-3186-4C4E-8AF9-C67C7D60B00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E8DCD4-3186-4C4E-8AF9-C67C7D60B00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E8DCD4-3186-4C4E-8AF9-C67C7D60B00B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {933D18B1-08C9-48A4-BF18-2FB7BDD6C585}
+	EndGlobalSection
+EndGlobal
