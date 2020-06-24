@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MordyGolf.Data.DbContexts;
 
 namespace MordyGolf.Api
 {
@@ -26,6 +27,11 @@ namespace MordyGolf.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // Services
+
+            // Db Context
+            //services.AddDbContext<MordyGolfContext>(options => options.UseSqlServer("<Connection String>", providerOptions => providerOptions.EnableRetryOnFailure()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
