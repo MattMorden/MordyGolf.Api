@@ -6,12 +6,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.6" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MordyGolf.DataContracts\MordyGolf.DataContracts.csproj" />
     <ProjectReference Include="..\MordyGolf.Data\MordyGolf.Data.csproj" />
+    <ProjectReference Include="..\MordyGolf.Service\MordyGolf.Service.csproj" />
   </ItemGroup>
 
 

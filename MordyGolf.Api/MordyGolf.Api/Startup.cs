@@ -11,6 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MordyGolf.Data.DbContexts;
+using MordyGolf.Data.Repositories;
+using MordyGolf.Data.Repositories.Interfaces;
+using MordyGolf.Service.Interfaces;
+using MordyGolf.Service.Services;
 
 namespace MordyGolf.Api
 {
@@ -29,6 +33,10 @@ namespace MordyGolf.Api
             services.AddControllers();
 
             // Services
+            services.AddTransient<IBookingService, BookingService>();
+
+            // Repositories
+            services.AddTransient<IBookingRepository, BookingRepository>();
 
             // Db Context
             //services.AddDbContext<MordyGolfContext>(options => options.UseSqlServer("<Connection String>", providerOptions => providerOptions.EnableRetryOnFailure()));
