@@ -27,6 +27,14 @@ namespace MordyGolf.Service.Services
         }
 
         /// <inheritdoc />
+        public Task<Guid> AddBooking(BookingContract bookingContract)
+        {
+            var confirmation = await _bookingRepository.AddBooking(bookingContract);
+
+            return confirmation;
+        }
+
+        /// <inheritdoc />
         public async Task<List<Booking>> GetActiveBookingsForCourseId(int courseId)
         {
             var bookings = await _bookingRepository.GetActiveBookingsForCourseId(courseId);

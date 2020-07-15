@@ -14,5 +14,12 @@ namespace MordyGolf.Data.Repositories.Interfaces
         /// <param name="courseId">The course id that the active bookings are being requested for</param>
         /// <returns>List of active bookings</returns>
         Task<List<Booking>> GetActiveBookingsForCourseId(int courseId);
+
+        /// <summary>
+        /// Adds a booking
+        /// </summary>
+        /// <param name="bookingContract">The booking contract to add</param>
+        /// <returns>Guid - confirmation number of the newly added booking</returns>
+        Task<Guid> AddBooking(BookingContract bookingContract);
     }
 }

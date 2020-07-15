@@ -36,5 +36,16 @@ namespace MordyGolf.Api.Controllers
 
             return Ok(bookings);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> AddBooking([FromBody]BookingContract bookingContract)
+        {
+            if (bookingContract == null)
+                return BadRequest();
+
+            var bookingConfirmation = await _bookingService.AddBooking(bookingContract);
+
+            return Ok(bookingConfirmation);
+        }
     }
 }
