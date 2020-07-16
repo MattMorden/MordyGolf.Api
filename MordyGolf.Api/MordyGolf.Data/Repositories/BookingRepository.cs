@@ -18,7 +18,8 @@ namespace MordyGolf.Data.Repositories
         /// <summary>
         /// Booking Repository constructor with dependencies.
         /// </summary>
-        /// <param name="logger"></param>
+        /// <param name="logger">Logger dependency</param>
+        /// <param name="dbContext">dbContext dependency</param>
         public BookingRepository(ILogger<BookingRepository> logger, MordyGolfContext dbContext)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));

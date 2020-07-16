@@ -14,20 +14,30 @@ namespace MordyGolf.Api.Controllers
     {
 
         private readonly ILogger<UserController> _logger;
+        private readonly IUserService _userService;
 
         /// <summary>
         /// User Controller with dependencies
         /// </summary>
         /// <param name="logger">ILogger dependency</param>
-        public UserController(ILogger<UserController> logger)
+        public UserController(ILogger<UserController> logger, IUserService userService)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _userService = userService ?? throw new ArgumentNullException(nameof(userService));
         }
 
         [HttpGet]
         public IActionResult GetUserByUsername(string username)
         {
             return Ok();
+        }
+
+        [HttpGet]
+        public IActionResult CreateUser([FromBody]CreateUserContract createUserContract)
+        {
+            var user = await _userService.CreateUser(createUserContract);
+
+            return Ok(user);
         }
     }
 }
